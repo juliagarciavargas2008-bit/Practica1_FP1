@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj": {}
+    "D:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj": {}
   },
   "projects": {
-    "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj": {
+    "D:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj",
+        "projectUniqueName": "D:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj",
         "projectName": "Practica1",
-        "projectPath": "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\obj\\",
+        "projectPath": "D:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Practica1.csproj",
+        "packagesPath": "U:\\usuarios\\usuario_local\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\software\\programacion\\MSVStudio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "U:\\usuarios\\usuario_local\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "c:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "c:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
