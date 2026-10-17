@@ -13,29 +13,57 @@
             int pala1Y, pala2Y,    // posición vertical de las palas
                 pelotaX, pelotaY,  // posición de la pelota
                 dirX, dirY,        // dirección de la pelota
-                puntos1, puntos2;  // puntos de cada jugador
+                puntos1, puntos2,  // puntos de cada jugador
+                retardo, time, cont;
 
 
             // Inicialización de las variables de estado del juego
+
             pala1Y = (ALTO - LONG_PALA) / 2;
             pala2Y = (ALTO - LONG_PALA) / 2;
 
             pelotaX = ANCHO / 2 + 1;    //Posicion de la pelota (inicio)
             pelotaY = ALTO / 2;             
-            dirX = -1;                   //Direccion de la pelota (inicio)
+            dirX = 1;                   //Direccion de la pelota (inicio)
             dirY = 1;
 
             puntos1 = 0;    //Puntuaciones
             puntos2 = 0;
 
+            retardo = 90;
+            time = 0;       //Tiempo desde que inició la partida
+            cont = 0;
 
             bool salir = false;
             bool pause = false;
+
             while (!salir)
             {
+                // BORRADO DE ELEMENTOS INTERACTIVOS
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.SetCursorPosition(1, pala1Y);          //Jugador 1
+                for (int i = 0; i < LONG_PALA; i++)
+                {                                               //Se coloca en el medio ()
+                    Console.SetCursorPosition(1, pala1Y + i);
+                    Console.Write(" ");
+                }
+                Console.ResetColor();
+
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.SetCursorPosition(ANCHO - 2, pala2Y);
+                for (int i = 0; i < LONG_PALA; i++)                 //Jugador 2
+                {
+                    Console.SetCursorPosition(ANCHO - 2, pala2Y + i);
+                    Console.Write(" ");
+                }
+                Console.ResetColor();
+
 
                 // LEER TECLADO
-                if (Console.KeyAvailable)
+
+                while (Console.KeyAvailable)
                 { // ver si se ha pulsado alguna tecla
                     ConsoleKeyInfo tecla = Console.ReadKey(true); // recoger pulsación de tecla
                     if (tecla.Key == ConsoleKey.W)
@@ -60,22 +88,49 @@
                     
                     if (tecla.Key == ConsoleKey.Q)
                     {
-                        salir = true;
+                        salir = true;                   //Hace que el juego se termine (AKA: lo rompe) (No hay vuelta atrás)
                     }
                     
                     if (!pause)
                     {
-                        if (tecla.Key == ConsoleKey.P) pause = true;
-                    } else
+                        if (tecla.Key == ConsoleKey.P)
+                        {
+                            pause = true;
+                            Console.SetCursorPosition((ANCHO / 2), (ALTO / 2) - 1);
+                            for (int i = 0; i < 3; i++)                                     //Pausa el juego, parando todo el bucle
+                            {                                                               //Escribe pausa borrando una posición arriba y abajo
+                                Console.SetCursorPosition(ANCHO / 2, (ALTO / 2) - 1 + i);
+                                Console.Write(" ");
+                            }
+                            Console.SetCursorPosition((ANCHO / 2) - 2, ALTO / 2);
+                            Console.Write("PAUSE");
+                        }
+                    } 
+                    else
                     {
-                        if (tecla.Key == ConsoleKey.P) pause = false;
+                        if (tecla.Key == ConsoleKey.P)
+                        {
+                            for (int i = 0; i < 5; i++)                                    
+                            {                                                               //Borra la línea de pause
+                                Console.SetCursorPosition(ANCHO / 2 - 2 + i, (ALTO / 2));
+                                Console.Write(" ");
+                            }
+                            pause = false;                   //Si se pulsa P de nuevo se despausa, devuelve el false al bool
+                           
+                        }
                     }
-                        
-
                 }
 
                 if (!pause) {
-                // MOVIMIENTO PELOTA
+
+                    //BORRADO DE ELEMENTOS MÓVILES
+
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.SetCursorPosition(pelotaX, pelotaY);       //Pelota
+                    Console.Write(" ");
+                    Console.ResetColor();
+
+                    // MOVIMIENTO PELOTA
 
                     if (((pelotaY == 1) && (dirY == -1)) || ((pelotaY == (ALTO - 1)) && (dirY == 1))) 
                     {                                                 //Si la pelota llega a alguno de los bordes con intencion de chocar
@@ -90,7 +145,11 @@
                         pelotaY = ALTO / 2;
                         dirX = 1;
                         dirY = 1;
+                        time -= 100;       //Deja más el tiempo antes de que vaya aumentando la velocidad
+                        retardo += 20;
                     }
+
+                    // COLISIÓNES: MUROS SUPERIOR E INFERIOR, SALIDA DEL ÁREA DE JUEGO (PUNTO JUGADOR), PALAS
 
                     if (pelotaX == 2)
                     {                                                 //Si el jugador llega al jugador 1 (x = 2)
@@ -114,12 +173,20 @@
                     pelotaX = pelotaX + dirX;           //Movemos la pelota
                     pelotaY = pelotaY + dirY;
 
-                    // COLISIÓNES: MUROS SUPERIOR E INFERIOR, SALIDA DEL ÁREA DE JUEGO (PUNTO JUGADOR), PALAS 
+                    if (time > 200)                 //Cuenta las veces que se ha repetido el bucle
+                    {
+                        if (retardo > 20)           //Si supera las 200 va haciendo que el juego vaya más rápido
+                        {                           //No vuelve a contar hasta 200, le doy ventaja
+                            retardo -= 5;           //así una vez que empieza a subir la velocidad no para
+                            time = 175;
+                            
+                        }
+                    }
 
                     // RENDERIZADO
 
-                    Console.Clear();
-                
+                    //Renderizado de constantes
+
                     Console.BackgroundColor = ConsoleColor.Green;
                     Console.SetCursorPosition(LEFT, TOP);   // Muro superior
                     for (int i = 0; i < ANCHO; i++)
@@ -129,7 +196,6 @@
                     }
                     Console.ResetColor();
 
-                
                     Console.BackgroundColor = ConsoleColor.Green;
                     Console.SetCursorPosition(LEFT, ALTO);  //Muro inferior
                     for (int i = 0; i < ANCHO; i++)
@@ -139,20 +205,21 @@
                     }
                     Console.ResetColor();
 
-
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.SetCursorPosition(ANCHO/2, (1));        //Red
+                    Console.SetCursorPosition(ANCHO / 2, (1));        //Red
                     for (int i = 0; i < (ALTO - 1); i++)
                     {                                               // Se coloca en la mitad (p35)
-                        Console.SetCursorPosition(ANCHO/2, ( 1 + i));
+                        Console.SetCursorPosition(ANCHO / 2, (1 + i));
                         Console.Write("|");
                     }
                     Console.ResetColor();
 
-                                                                   
+                            
                     Console.SetCursorPosition(1,ALTO + 2);          //Puntos de cada jugador
                     Console.Write($"Jugador 1: {puntos1, -7} Jugador 2: {puntos2, -7} (Q para salir)");
                     Console.ResetColor();
+
+                    //Renderizado de elementos móviles
 
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.SetCursorPosition( 1, pala1Y);          //Jugador 1
@@ -179,10 +246,10 @@
                     Console.ResetColor();
 
 
-                    // dibujo red central, pelota, palas, puntos jugadores
-
                     // Retardo
-                    System.Threading.Thread.Sleep(90);
+                    time++;
+
+                    System.Threading.Thread.Sleep(retardo);
 
                     // borrado de la pelota y palas para el siguiente frame
                 }
