@@ -14,7 +14,7 @@
                 pelotaX, pelotaY,  // posición de la pelota
                 dirX, dirY,        // dirección de la pelota
                 puntos1, puntos2,  // puntos de cada jugador
-                retardo, time, cont;
+                retardo, time;
 
 
             // Inicialización de las variables de estado del juego
@@ -32,7 +32,6 @@
 
             retardo = 90;
             time = 0;       //Tiempo desde que inició la partida
-            cont = 0;
 
             bool salir = false;
             bool pause = false;
@@ -134,7 +133,7 @@
 
                     if (((pelotaY == 1) && (dirY == -1)) || ((pelotaY == (ALTO - 1)) && (dirY == 1))) 
                     {                                                 //Si la pelota llega a alguno de los bordes con intencion de chocar
-                        dirY = -dirY;
+                        dirY = -  dirY;
                     }
 
                     if ((pelotaX == 0) || (pelotaX == (ANCHO)))
@@ -167,8 +166,6 @@
                         }                                             //hago que compruebe la lonjitud entera (LONG_PALA)
                     }
 
-                    pala1Y = pala1Y;                    //Futuro movimiento de las palas
-                    pala2Y = pala2Y;
 
                     pelotaX = pelotaX + dirX;           //Movemos la pelota
                     pelotaY = pelotaY + dirY;
