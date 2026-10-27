@@ -1,4 +1,7 @@
-﻿namespace Practica1
+﻿//Julia García Vargas
+//Jerico Marl Valdez Duclayan
+
+namespace Practica1
 {
     internal class Program
     {
@@ -51,7 +54,8 @@
                 // LEER TECLADO
 
                 while (Console.KeyAvailable)
-                { // ver si se ha pulsado alguna tecla
+                { 
+                    // ver si se ha pulsado alguna tecla
                     ConsoleKeyInfo tecla = Console.ReadKey(true); // recoger pulsación de tecla
                     if ((tecla.Key == ConsoleKey.W) && (pala1Y != 2)) pala1Y--;         //La pala 1 sube
 
@@ -120,21 +124,21 @@
                         if (retardo < 90) retardo += 20;
                     }
 
-                    // COLISIÓNES: MUROS SUPERIOR E INFERIOR, SALIDA DEL ÁREA DE JUEGO (PUNTO JUGADOR), PALAS
+                    pelotaX = pelotaX + dirX;           //Movemos la pelota
+                    pelotaY = pelotaY + dirY;
+
+                    // COLISIONES: MUROS SUPERIOR E INFERIOR, SALIDA DEL ÁREA DE JUEGO (PUNTO JUGADOR), PALAS
 
                     if ((pelotaX == 2) && (pala1Y <= pelotaY) && (pelotaY <= (pala1Y + LONG_PALA))) dirX = -dirX;
 
                     if ((pelotaX == ANCHO - 3) && (pala2Y <= pelotaY) && (pelotaY <= (pala2Y + LONG_PALA))) dirX = -dirX;
 
 
-                    pelotaX = pelotaX + dirX;           //Movemos la pelota
-                    pelotaY = pelotaY + dirY;
-
                     if (time > 200)                 //Cuenta las veces que se ha repetido el bucle
                     {
                         if (retardo > 20)           //Si supera las 200 va haciendo que el juego vaya más rápido
                         {                           //No vuelve a contar hasta 200, le doy ventaja
-                            retardo -= 5;           //así una vez que empieza a subir la velocidad no para
+                            retardo -= 3;           //así una vez que empieza a subir la velocidad no para
                             time = 175;
                             
                         }
