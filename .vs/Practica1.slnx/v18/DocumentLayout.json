@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Universidad\\FP1\\Practica1_FP1\\",
+  "WorkspaceRootPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDF0CDF9-850D-4A4D-FE1B-BB8634382A9F}|Practica1\\Practica1.csproj|e:\\universidad\\fp1\\practica1_fp1\\practica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDF0CDF9-850D-4A4D-FE1B-BB8634382A9F}|Practica1\\Practica1.csproj|c:\\users\\jeico\\visual studio\\practica1_fp1\\practica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDF0CDF9-850D-4A4D-FE1B-BB8634382A9F}|Practica1\\Practica1.csproj|solutionrelative:practica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Practica1\\Program.cs",
               "RelativeDocumentMoniker": "Practica1\\Program.cs",
-              "ToolTip": "E:\\Universidad\\FP1\\Practica1_FP1\\Practica1\\Program.cs",
+              "ToolTip": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Practica1\\Program.cs",
               "RelativeToolTip": "Practica1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T12:25:32.834Z",
               "EditorCaption": ""
