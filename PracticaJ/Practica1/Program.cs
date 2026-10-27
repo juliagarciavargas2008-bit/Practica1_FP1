@@ -1,9 +1,9 @@
-namespace Practica1
+﻿namespace Practica1
 {
     internal class Program
     {
         const int ANCHO = 71, ALTO = 20,  // ancho y alto del área de juego (sin contar la parte de puntuación)              
-              LONG_PALA = 4, LEFT = 0, TOP = 0;        // longitud de las palas
+              LONG_PALA = 4;        // longitud de las palas
 
         static Random rnd = new Random(); // para aleatorizar la dirección de la pelota
         static void Main()
@@ -116,7 +116,6 @@ namespace Practica1
                         pelotaX = ANCHO / 2 + 1;
                         pelotaY = ALTO / 2;
                         dirX = dirY = 1;
-                        dirY = 1;
                         if (time > 0) time -= 100;       //Deja más el tiempo antes de que vaya aumentando la velocidad
                         if (retardo < 90) retardo += 20;
                     }
@@ -146,16 +145,14 @@ namespace Practica1
                     //Renderizado de constantes
 
                     Console.BackgroundColor = ConsoleColor.Green;
-                    Console.SetCursorPosition(LEFT, TOP);   // Muro superior
+                    Console.SetCursorPosition(0, 0);   // Muro superior
                     for (int i = 0; i < ANCHO; i++)
                     {                                       // Comienza en i (0) y avanza hasta el ANCHO (71), [0,70]
-                        Console.SetCursorPosition(i, TOP);
+                        Console.SetCursorPosition(i, 0);
                         Console.Write(" ");
                     }
-                    Console.ResetColor();
 
-                    Console.BackgroundColor = ConsoleColor.Green;
-                    Console.SetCursorPosition(LEFT, ALTO);  //Muro inferior
+                    Console.SetCursorPosition(0, 0);  //Muro inferior
                     for (int i = 0; i < ANCHO; i++)
                     {                                       // Comienza en i (0) y avanza hasta el ANCHO (71), [0,70]
                         Console.SetCursorPosition(i, ALTO);
@@ -175,7 +172,6 @@ namespace Practica1
                             
                     Console.SetCursorPosition(1,ALTO + 2);          //Puntos de cada jugador
                     Console.Write($"Jugador 1: {puntos1, -7} Jugador 2: {puntos2, -7} (Q para salir)");
-                    Console.ResetColor();
 
                     //Renderizado de elementos móviles
 
@@ -186,7 +182,6 @@ namespace Practica1
                         Console.SetCursorPosition( 1, pala1Y + i);
                         Console.Write("|");
                     }
-                    Console.ResetColor();
 
 
                     Console.ForegroundColor = ConsoleColor.Cyan;
@@ -196,7 +191,6 @@ namespace Practica1
                         Console.SetCursorPosition(ANCHO - 2, pala2Y + i);
                         Console.Write("|");
                     }
-                    Console.ResetColor();
 
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.SetCursorPosition(pelotaX, pelotaY);       //Pelota

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeico\\Visual Studio\\C#\\Práctica1\\Práctica1.csproj": {}
+    "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Práctica1\\Práctica1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeico\\Visual Studio\\C#\\Práctica1\\Práctica1.csproj": {
+    "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Práctica1\\Práctica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeico\\Visual Studio\\C#\\Práctica1\\Práctica1.csproj",
+        "projectUniqueName": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Práctica1\\Práctica1.csproj",
         "projectName": "Práctica1",
-        "projectPath": "C:\\Users\\jeico\\Visual Studio\\C#\\Práctica1\\Práctica1.csproj",
+        "projectPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Práctica1\\Práctica1.csproj",
         "packagesPath": "C:\\Users\\jeico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeico\\Visual Studio\\C#\\Práctica1\\obj\\",
+        "outputPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\Práctica1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeico\\AppData\\Roaming\\NuGet\\NuGet.Config",
