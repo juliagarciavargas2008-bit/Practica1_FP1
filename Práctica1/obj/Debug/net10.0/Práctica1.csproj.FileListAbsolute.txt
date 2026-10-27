@@ -1,0 +1,15 @@
+C:\Users\jeico\Visual Studio\C#\Práctica1\bin\Debug\net10.0\Práctica1.exe
+C:\Users\jeico\Visual Studio\C#\Práctica1\bin\Debug\net10.0\Práctica1.deps.json
+C:\Users\jeico\Visual Studio\C#\Práctica1\bin\Debug\net10.0\Práctica1.runtimeconfig.json
+C:\Users\jeico\Visual Studio\C#\Práctica1\bin\Debug\net10.0\Práctica1.dll
+C:\Users\jeico\Visual Studio\C#\Práctica1\bin\Debug\net10.0\Práctica1.pdb
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.AssemblyInfoInputs.cache
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.AssemblyInfo.cs
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.csproj.CoreCompileInputs.cache
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.dll
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\refint\Práctica1.dll
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.pdb
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.genruntimeconfig.cache
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\ref\Práctica1.dll
+C:\Users\jeico\Visual Studio\C#\Práctica1\obj\Debug\net10.0\Práctica1.csproj.Up2Date
