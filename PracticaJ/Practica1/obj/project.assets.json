@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jeico\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
+      "projectUniqueName": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
       "projectName": "Practica1",
-      "projectPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
-      "packagesPath": "C:\\Users\\jeico\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\obj\\",
+      "projectPath": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jeico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -346,5 +346,13 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

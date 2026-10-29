@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj": {}
+    "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj": {
+    "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
+        "projectUniqueName": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
         "projectName": "Practica1",
-        "projectPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
-        "packagesPath": "C:\\Users\\jeico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\Practica1\\obj\\",
+        "projectPath": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\Practica1.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "E:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\Practica1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jeico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

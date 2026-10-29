@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\jeico\\Visual Studio\\Practica1_FP1\\PracticaJ\\",
   "Documents": [
     {
@@ -7,6 +8,10 @@
       "RelativeMoniker": "D:0:0:{EDF0CDF9-850D-4A4D-FE1B-BB8634382A9F}|Practica1\\Practica1.csproj|solutionrelative:practica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "D:\\Universidad\\FP1\\Practica1_FP1\\PracticaJ\\",
+  "Documents": [],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,11 +19,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 1,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -32,6 +42,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T11:19:54.254Z",
               "EditorCaption": ""
+=======
+>>>>>>> Stashed changes
             }
           ]
         }
